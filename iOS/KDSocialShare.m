@@ -102,12 +102,12 @@ RCT_EXPORT_METHOD(shareOnSinaWeibo:(NSDictionary *)options
                   callback: (RCTResponseSenderBlock)callback)
 {
   NSString *serviceType = SLServiceTypeSinaWeibo;
-  if (![SLComposeViewController isAvailableForServiceType:serviceType]){
-     callback(@[@"not_support"]);
+  SLComposeViewController *composeCtl = [SLComposeViewController composeViewControllerForServiceType:serviceType];
+  if (composeCtl == nil){
+    callback(@[@"not_support"]);
     return;
   }
-  SLComposeViewController *composeCtl = [SLComposeViewController composeViewControllerForServiceType:serviceType];
-  
+
   if ([options objectForKey:@"link"] && [options objectForKey:@"link"] != [NSNull null]) {
     NSString *link = [RCTConvert NSString:options[@"link"]];
     [composeCtl addURL:[NSURL URLWithString:link]];
