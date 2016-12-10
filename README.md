@@ -88,7 +88,8 @@ The callback function runs when the native environment has information for the r
 | ------------- | ------------- |
 | "success"      | Native call made by the viewController - SLComposeViewControllerResultDone – The user sent the composed message by touching the Send button. |
 | "cancelled"      | Native call made by the viewController - SLComposeViewControllerResultCancelled – The user cancelled the composition session by touching the Cancel button.  |
-| "not_available"      | The selected service eg. Facebook, is not available. This can be because the user has not signed in to Facebook on the device or maybe there is no internet access. |
+| "not_support"      | The selected service eg. SinaWeibo, is not available on your device. Whether a service is avaliable or not, depends on your location and language settings.
+
 
 You can use these callbacks to present alerts to the user. For example tell the user to login to a certain service.
 
