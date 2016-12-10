@@ -1,15 +1,19 @@
 {
   "name": "react-native-social-share",
-  "version": "0.8.0",
-  "description": "Use the iOS native Twitter and Facebook share view from react native",
-  "author": {
+  "version": "0.9.0",
+  "description": "Use the iOS native Twitter, Facebook and Sina Weibo share view from react native",
+  "author": [{
     "name": "Kim Døfler",
     "email": "kim.doefler@gmail.com"
-  },
+  },{
+    "name": "Cao Junquan",
+    "email": "i@cdog.me"
+  }],
   "keywords": [
     "react",
     "twitter",
     "facebook",
+    "weibo",
     "SLComposeViewController",
     "RCTBridgeModule",
     "Social",
@@ -21,25 +25,25 @@
     "react native facebook",
     "react native twitter"
   ],
-  "homepage": "https://github.com/doefler/react-native-social-share",
+  "homepage": "https://github.com/liaoyuan-io/react-native-social-share",
   "bugs": {
-    "url": "https://github.com/doefler/react-native-social-share/issues"
+    "url": "https://github.com/liaoyuan-io/react-native-social-share/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/doefler/react-native-social-share.git"
+    "url": "git://github.com/liaoyuan-io/react-native-social-share.git"
   },
   "scripts": {},
-  "_npmUser": {
-    "name": "doefler",
-    "email": "kim.doefler@gmail.com"
-  },
   "main": "index.js",
   "maintainers": [
     {
       "name": "Kim Døfler",
       "email": "kim.doefler@gmail.com"
+    },{
+      "name": "Cao Junquan",
+      "email": "i@cdog.me"
     }
+
   ],
   "peerDependencies": {
     "react-native": ">=0.26.0"

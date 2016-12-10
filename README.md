@@ -16,9 +16,9 @@ https://artboost.com
 
 1. `npm install react-native-social-share --save`
 2. In XCode, in the project navigator right click `Libraries` ➜ `Add Files to [your project's name]`
-3. Go to `node_modules` ➜ `react-native-social-share`➜ iOS and add `KDSocialShare.h` and `KDSocialShare.m` 
+3. Go to `node_modules` ➜ `react-native-social-share`➜ `RCTSocialShare` and add `RCTSocialShare`.
 4. Go to your project's `Build Phases` ➜ `Link Binary With Libraries` phase
-5. Add `Social.framework` to ➜ `Link Binary With Libraries` build phase of your project (click the '+' and search for 'social').
+5. Add `Social.framework` and `libRCTSocialShare` to ➜ `Link Binary With Libraries` build phase of your project.
 6. Run your project (`Cmd+R`)
 
 Now you can implement the share popups in your react native code.
@@ -27,7 +27,7 @@ Now you can implement the share popups in your react native code.
 
 First you should make the native implementation available in the react code by inserting the following line in the top of the file
 ```
-var KDSocialShare = require('NativeModules').KDSocialShare;
+var socialShare = require('react-native-social-share');
 ```
 After doing that you will be able to popup the share views from your own functions. I made two examples below one for Facebook and one for Twitter
 ```
@@ -64,9 +64,9 @@ After doing that you will be able to popup the share views from your own functio
 
 The two implementations take the following paramters
 
-- `KDSocialShare.shareOnFacebook(options [object], callback [function])`
-- `KDSocialShare.tweet(options [object], callback [function])`
-- `KDSocialShare.shareOnSinaWeibo(options [object], callback [function])`
+- `RCTSocialShare.shareOnFacebook(options [object], callback [function])`
+- `RCTSocialShare.tweet(options [object], callback [function])`
+- `RCTSocialShare.shareOnSinaWeibo(options [object], callback [function])`
 
 #### IMPORTANT Both the options object and the callback function needs to be set. The options object can be empty though if you do not want to preset any of the possible options. 
 
@@ -107,14 +107,14 @@ var {
   TouchableHighlight,
 } = React;
 
-var KDSocialShare = require('NativeModules').KDSocialShare;
+var socialShare = require('react-native-social-share');
 
 
 var ReactNativeSocialShare = React.createClass({
 
   tweet : function() {
 
-    KDSocialShare.tweet({
+    socialShare.tweet({
         'text':'Global democratized marketplace for art',
         'link':'https://artboost.com/',
         'imagelink':'https://artboost.com/apple-touch-icon-144x144.png',
@@ -129,7 +129,7 @@ var ReactNativeSocialShare = React.createClass({
 
   shareOnFacebook : function() {
 
-    KDSocialShare.shareOnFacebook({
+    socialShare.shareOnFacebook({
         'text':'Global democratized marketplace for art',
         'link':'https://artboost.com/',
         'imagelink':'https://artboost.com/apple-touch-icon-144x144.png',
