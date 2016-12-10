@@ -1,13 +1,11 @@
 # React Native Social Share
 
-Use the build in share view from iOS to let the user share on Facebook and Twitter.
+Use the build in share view from iOS to let the user share on Facebook, Twitter and Sina Weibo.
 It will use the users existing account without having to get new authorizations.
 You can even preset text, image and link for the share view.
 
 In other words a React Native wrapper for the `SLComposeViewController`
 
-I developed this module for our upcoming artboost app.
-https://artboost.com
 
 
 ![Animation](https://raw.githubusercontent.com/doefler/react-native-social-share/master/animation-looping.gif)
