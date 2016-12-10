@@ -34,11 +34,15 @@
     "name": "doefler",
     "email": "kim.doefler@gmail.com"
   },
+  "main": "index.js",
   "maintainers": [
     {
       "name": "Kim Døfler",
       "email": "kim.doefler@gmail.com"
     }
   ],
+  "peerDependencies": {
+    "react-native": ">=0.26.0"
+  },
   "license": "MIT"
 }
