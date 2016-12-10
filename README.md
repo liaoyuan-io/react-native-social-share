@@ -66,6 +66,7 @@ The two implementations take the following paramters
 
 - `KDSocialShare.shareOnFacebook(options [object], callback [function])`
 - `KDSocialShare.tweet(options [object], callback [function])`
+- `KDSocialShare.shareOnSinaWeibo(options [object], callback [function])`
 
 #### IMPORTANT Both the options object and the callback function needs to be set. The options object can be empty though if you do not want to preset any of the possible options. 
 
