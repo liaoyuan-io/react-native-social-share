@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D0E1FF051DFC55C4002D74B0 /* RCTSocialShare.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E1FF041DFC55C4002D74B0 /* RCTSocialShare.m */; };
-		D0E1FF061DFC55C4002D74B0 /* RCTSocialShare.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0E1FF031DFC55C4002D74B0 /* RCTSocialShare.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,15 +17,14 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				D0E1FF061DFC55C4002D74B0 /* RCTSocialShare.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D094431F1DFC6A8D00003D56 /* RCTSocialShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTSocialShare.h; sourceTree = "<group>"; };
 		D0E1FF001DFC55C4002D74B0 /* libRCTSocialShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTSocialShare.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0E1FF031DFC55C4002D74B0 /* RCTSocialShare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTSocialShare.h; path = "../../../../Users/Peter/Documents/work/liaoyuan/react-native-social-share/RCTSocialShare/RCTSocialShare/RCTSocialShare.h"; sourceTree = DEVELOPER_DIR; };
 		D0E1FF041DFC55C4002D74B0 /* RCTSocialShare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTSocialShare.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,8 +58,8 @@
 		D0E1FF021DFC55C4002D74B0 /* RCTSocialShare */ = {
 			isa = PBXGroup;
 			children = (
-				D0E1FF031DFC55C4002D74B0 /* RCTSocialShare.h */,
 				D0E1FF041DFC55C4002D74B0 /* RCTSocialShare.m */,
+				D094431F1DFC6A8D00003D56 /* RCTSocialShare.h */,
 			);
 			path = RCTSocialShare;
 			sourceTree = "<group>";
@@ -270,6 +268,7 @@
 				D0E1FF0B1DFC55C4002D74B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
