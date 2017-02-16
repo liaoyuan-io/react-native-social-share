@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 @import UIKit;
-#import "RCTBridgeModule.h"
+#if __has_include("RCTBridgeModule.h")
+    #import "RCTBridgeModule.h"
+#else
+    #import <React/RCTBridgeModule.h>
+#endif
 
 @interface RCTSocialShare : NSObject <RCTBridgeModule>
 
